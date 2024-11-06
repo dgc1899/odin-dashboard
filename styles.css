@@ -209,6 +209,13 @@ section {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-top: calc(var(--base-spacing) * 2);
+    margin-left: calc(var(--base-spacing) * 2);
+    gap: calc(var(--base-spacing) * 3);
+
+    h2 {
+        font-size: 1.2rem;
+    }
  }
 
  .project-container  {
@@ -218,11 +225,45 @@ section {
     .project-card-container {
         height: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px ,1fr));
         grid-template-rows: repeat(3, 1fr);
         gap: calc(var(--base-spacing) * 2);
     }
+    .project-card {
+        display: flex;
+        justify-content: start;
+        background-color: var(--color-bg2);
+        border-radius: 10px;
+        
+        .project-card-strip {
+                background-color: orange;
+                width: 20px;
+                height: 100%;
+                border-radius: 10px 0 0 10px;
+            }
+
+        .project-card-content {
+            display: flex;
+            flex-direction: column;
+            margin: calc(var(--base-spacing) * 3);
+            span {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            p {
+                flex: 2;
+                font-size: 0.8rem;
+                color: gray;
+            }
+            .icon-container {
+                align-self: flex-end;
+            }
+            svg {
+                margin: 0 var(--base-spacing) 0 var(--base-spacing);
+                width: 25px;
+                height: 25px;
+            }
+        }
+        
+    }
  }
- .project-card {
-    background-color: var(--color-bg);
-}
