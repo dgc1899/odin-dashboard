@@ -56,6 +56,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 100%;
+    box-shadow: 2px 0 2px 0 lightgray;
 }
 
 header .search-container {
@@ -175,6 +176,7 @@ aside {
     padding-left: calc(var(--base-spacing) * 2);
     gap: calc(var(--base-spacing) * 15);
     color: var(--color-bg);
+    box-shadow: 2px 0 2px 0 lightgray;
     font-weight: bold;
     .sidebar-title {
         display: flex;
@@ -235,6 +237,7 @@ grid-row: span 2;
         justify-content: start;
         background-color: var(--color-bg2);
         border-radius: 10px;
+        box-shadow: 2px 0 2px 0 lightgray;
         
         .project-card-strip {
                 background-color: orange;
@@ -273,6 +276,7 @@ grid-row: span 2;
     flex-direction: column;
 
     .announcements-container-content {
+        box-shadow: 2px 0 2px 0 lightgray;
         height: 100%;
         background-color: var(--color-bg2);
         border-radius: 10px;
@@ -303,6 +307,7 @@ grid-row: span 2;
     height: 90%;
 
     .trending-container-content {
+        box-shadow: 2px 0 2px 0 lightgray;
         background-color: var(--color-bg2);
         border-radius: 10px;
         margin-bottom: 1rem;
