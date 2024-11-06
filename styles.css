@@ -280,9 +280,11 @@ grid-row: span 2;
         align-items: center;
 
         .announcement {
-            padding: 20px;
+            height: 33%;
+            width: 80%;
+            padding: 20px 0;
             justify-self: center;
-            border-bottom: 1px gray solid;
+            border-bottom: 1px rgb(165, 164, 164) solid;
             span {
                 font-weight: bold;
                 
